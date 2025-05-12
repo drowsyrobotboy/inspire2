@@ -11,6 +11,10 @@ import (
 
 func RegisterRoutes(r chi.Router) {
 	r.Get("/news", getNews)
+
+	// Serve static files using r.Handle
+	htmlDir := http.Dir("ui")
+	r.Handle("/*", http.StripPrefix("/", http.FileServer(htmlDir)))
 }
 
 func getNews(w http.ResponseWriter, r *http.Request) {
