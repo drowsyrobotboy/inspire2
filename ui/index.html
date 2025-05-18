@@ -4,11 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inspire II</title>
+    <link href="css/main.css" type="text/css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Inspire</h1>
-    <ul id="news-list">
-        Loading Feed...
+    <h1>Inspire II</h1>
+    <div id="tabs">
+        <div class="tab active" data-source="hackernews">Hacker News</div>
+        <div class="tab" data-source="lobsters">Lobsters</div>
+    </div>
+    <ul id="hackernews-list" class="news-list active">
+        Loading Hacker News...
+    </ul>
+    <ul id="lobsters-list" class="news-list">
+        Loading Lobsters...
     </ul>
     <script src="js/fetch.js"> </script>
 </body>

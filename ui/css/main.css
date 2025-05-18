@@ -1,0 +1,19 @@
+.tab {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px;
+    cursor: pointer;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px 5px 0px 0px;
+}
+.tab.active {
+    background-color: #ddd;
+    font-weight: bold;
+}
+.news-list {
+    display: none;
+}
+.news-list.active {
+    display: block;
+}
